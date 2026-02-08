@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10001 /* TaHomaMacOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10001 /* TaHomaMacOSApp.swift */; };
+		A10002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10002 /* ContentView.swift */; };
+		A10003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10003 /* Assets.xcassets */; };
+		A10010 /* TaHomaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010 /* TaHomaModels.swift */; };
+		A10011 /* TaHomaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* TaHomaClient.swift */; };
+		A10012 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* KeychainHelper.swift */; };
+		A10013 /* SharedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* SharedConfig.swift */; };
+		A10014 /* OverkizRootCA.der in Resources */ = {isa = PBXBuildFile; fileRef = B10014 /* OverkizRootCA.der */; };
+		A10015 /* BlindDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10015 /* BlindDevice.swift */; };
+		A10016 /* BlindIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10016 /* BlindIconType.swift */; };
+		A10017 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10017 /* AppTheme.swift */; };
+		A10018 /* BlindIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10018 /* BlindIcons.swift */; };
+		A10019 /* AnimatedBlindIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10019 /* AnimatedBlindIcon.swift */; };
+		A10020 /* BlindAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10020 /* BlindAnimator.swift */; };
+		A10021 /* BlindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10021 /* BlindController.swift */; };
+		A10022 /* SceneDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022 /* SceneDrawing.swift */; };
+		A10023 /* FavoritePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10023 /* FavoritePosition.swift */; };
+		A10026 /* SetPositionIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20011 /* SetPositionIntent.swift */; };
+		A20001 /* BlindWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20001 /* BlindWidgetBundle.swift */; };
+		A20002 /* BlindWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20002 /* BlindWidget.swift */; };
+		A20003 /* BlindWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20003 /* BlindWidgetEntryView.swift */; };
+		A20004 /* OpenBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20004 /* OpenBlindIntent.swift */; };
+		A20005 /* CloseBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20005 /* CloseBlindIntent.swift */; };
+		A20006 /* StopBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20006 /* StopBlindIntent.swift */; };
+		A20007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20007 /* Assets.xcassets */; };
+		A20010 /* TaHomaModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10010 /* TaHomaModels.swift */; };
+		A20011 /* TaHomaClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10011 /* TaHomaClient.swift */; };
+		A20012 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10012 /* KeychainHelper.swift */; };
+		A20013 /* SharedConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10013 /* SharedConfig.swift */; };
+		A20014 /* OverkizRootCA.der in Resources */ = {isa = PBXBuildFile; fileRef = B10014 /* OverkizRootCA.der */; };
+		A20015 /* OpenBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20004 /* OpenBlindIntent.swift */; };
+		A20016 /* CloseBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20005 /* CloseBlindIntent.swift */; };
+		A20017 /* StopBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20006 /* StopBlindIntent.swift */; };
+		A20018 /* BlindDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10015 /* BlindDevice.swift */; };
+		A20019 /* SelectBlindIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20010 /* SelectBlindIntent.swift */; };
+		A20020 /* BlindIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10016 /* BlindIconType.swift */; };
+		A20021 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10017 /* AppTheme.swift */; };
+		A20022 /* BlindIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10018 /* BlindIcons.swift */; };
+		A20023 /* SceneDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10022 /* SceneDrawing.swift */; };
+		A20024 /* FavoritePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10023 /* FavoritePosition.swift */; };
+		A20025 /* SetPositionIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20011 /* SetPositionIntent.swift */; };
+		A20026 /* BlindEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20012 /* BlindEntry.swift */; };
+		A20027 /* BlindTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20013 /* BlindTimelineProvider.swift */; };
+		A30001 /* BlindWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = P20000 /* BlindWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C10001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = R00000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = T20000;
+			remoteInfo = BlindWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CP0001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A30001 /* BlindWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B10001 /* TaHomaMacOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaHomaMacOSApp.swift; sourceTree = "<group>"; };
+		B10002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B10003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10004 /* TaHomaMacOSApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaHomaMacOSApp.entitlements; sourceTree = "<group>"; };
+		B10010 /* TaHomaModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaHomaModels.swift; sourceTree = "<group>"; };
+		B10011 /* TaHomaClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaHomaClient.swift; sourceTree = "<group>"; };
+		B10012 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		B10013 /* SharedConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedConfig.swift; sourceTree = "<group>"; };
+		B10014 /* OverkizRootCA.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = OverkizRootCA.der; sourceTree = "<group>"; };
+		B10015 /* BlindDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindDevice.swift; sourceTree = "<group>"; };
+		B10016 /* BlindIconType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindIconType.swift; sourceTree = "<group>"; };
+		B10017 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		B10018 /* BlindIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindIcons.swift; sourceTree = "<group>"; };
+		B10019 /* AnimatedBlindIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBlindIcon.swift; sourceTree = "<group>"; };
+		B10020 /* BlindAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindAnimator.swift; sourceTree = "<group>"; };
+		B10021 /* BlindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindController.swift; sourceTree = "<group>"; };
+		B10022 /* SceneDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDrawing.swift; sourceTree = "<group>"; };
+		B10023 /* FavoritePosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePosition.swift; sourceTree = "<group>"; };
+		B20001 /* BlindWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindWidgetBundle.swift; sourceTree = "<group>"; };
+		B20002 /* BlindWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindWidget.swift; sourceTree = "<group>"; };
+		B20003 /* BlindWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindWidgetEntryView.swift; sourceTree = "<group>"; };
+		B20004 /* OpenBlindIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBlindIntent.swift; sourceTree = "<group>"; };
+		B20005 /* CloseBlindIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloseBlindIntent.swift; sourceTree = "<group>"; };
+		B20006 /* StopBlindIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopBlindIntent.swift; sourceTree = "<group>"; };
+		B20007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20008 /* BlindWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlindWidget.entitlements; sourceTree = "<group>"; };
+		B20009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20010 /* SelectBlindIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBlindIntent.swift; sourceTree = "<group>"; };
+		B20011 /* SetPositionIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPositionIntent.swift; sourceTree = "<group>"; };
+		B20012 /* BlindEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindEntry.swift; sourceTree = "<group>"; };
+		B20013 /* BlindTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindTimelineProvider.swift; sourceTree = "<group>"; };
+		P10000 /* TaHomaMacOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaHomaMacOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		P20000 /* BlindWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BlindWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F10000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G00000 = {
+			isa = PBXGroup;
+			children = (
+				G10000 /* TaHomaMacOSApp */,
+				G20000 /* Shared */,
+				G30000 /* BlindWidget */,
+				G90000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		G10000 /* TaHomaMacOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				B10001 /* TaHomaMacOSApp.swift */,
+				B10002 /* ContentView.swift */,
+				B10019 /* AnimatedBlindIcon.swift */,
+				B10020 /* BlindAnimator.swift */,
+				B10021 /* BlindController.swift */,
+				B10003 /* Assets.xcassets */,
+				B10004 /* TaHomaMacOSApp.entitlements */,
+			);
+			path = TaHomaMacOSApp;
+			sourceTree = "<group>";
+		};
+		G20000 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B10010 /* TaHomaModels.swift */,
+				B10011 /* TaHomaClient.swift */,
+				B10012 /* KeychainHelper.swift */,
+				B10013 /* SharedConfig.swift */,
+				B10014 /* OverkizRootCA.der */,
+				B10015 /* BlindDevice.swift */,
+				B10016 /* BlindIconType.swift */,
+				B10017 /* AppTheme.swift */,
+				B10018 /* BlindIcons.swift */,
+				B10022 /* SceneDrawing.swift */,
+				B10023 /* FavoritePosition.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		G30000 /* BlindWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B20001 /* BlindWidgetBundle.swift */,
+				B20002 /* BlindWidget.swift */,
+				B20012 /* BlindEntry.swift */,
+				B20013 /* BlindTimelineProvider.swift */,
+				B20003 /* BlindWidgetEntryView.swift */,
+				B20004 /* OpenBlindIntent.swift */,
+				B20005 /* CloseBlindIntent.swift */,
+				B20006 /* StopBlindIntent.swift */,
+				B20010 /* SelectBlindIntent.swift */,
+				B20011 /* SetPositionIntent.swift */,
+				B20007 /* Assets.xcassets */,
+				B20008 /* BlindWidget.entitlements */,
+				B20009 /* Info.plist */,
+			);
+			path = BlindWidget;
+			sourceTree = "<group>";
+		};
+		G90000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				P10000 /* TaHomaMacOSApp.app */,
+				P20000 /* BlindWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T10000 /* TaHomaMacOSApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X10000 /* Build configuration list for PBXNativeTarget "TaHomaMacOSApp" */;
+			buildPhases = (
+				S10000 /* Sources */,
+				F10000 /* Frameworks */,
+				R10000 /* Resources */,
+				CP0001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D10001 /* PBXTargetDependency */,
+			);
+			name = TaHomaMacOSApp;
+			productName = TaHomaMacOSApp;
+			productReference = P10000 /* TaHomaMacOSApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		T20000 /* BlindWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = X20000 /* Build configuration list for PBXNativeTarget "BlindWidgetExtension" */;
+			buildPhases = (
+				S20000 /* Sources */,
+				F20000 /* Frameworks */,
+				R20000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlindWidgetExtension;
+			productName = BlindWidgetExtension;
+			productReference = P20000 /* BlindWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		R00000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					T10000 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					T20000 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = X00000 /* Build configuration list for PBXProject "TaHomaMacOSApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = G00000;
+			productRefGroup = G90000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				T10000 /* TaHomaMacOSApp */,
+				T20000 /* BlindWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10003 /* Assets.xcassets in Resources */,
+				A10014 /* OverkizRootCA.der in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		R20000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20007 /* Assets.xcassets in Resources */,
+				A20014 /* OverkizRootCA.der in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S10000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10001 /* TaHomaMacOSApp.swift in Sources */,
+				A10002 /* ContentView.swift in Sources */,
+				A10010 /* TaHomaModels.swift in Sources */,
+				A10011 /* TaHomaClient.swift in Sources */,
+				A10012 /* KeychainHelper.swift in Sources */,
+				A10013 /* SharedConfig.swift in Sources */,
+				A10015 /* BlindDevice.swift in Sources */,
+				A10016 /* BlindIconType.swift in Sources */,
+				A10017 /* AppTheme.swift in Sources */,
+				A10018 /* BlindIcons.swift in Sources */,
+				A10019 /* AnimatedBlindIcon.swift in Sources */,
+				A10020 /* BlindAnimator.swift in Sources */,
+				A10021 /* BlindController.swift in Sources */,
+				A10022 /* SceneDrawing.swift in Sources */,
+				A20015 /* OpenBlindIntent.swift in Sources */,
+				A20016 /* CloseBlindIntent.swift in Sources */,
+				A20017 /* StopBlindIntent.swift in Sources */,
+				A10023 /* FavoritePosition.swift in Sources */,
+				A10026 /* SetPositionIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		S20000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A20001 /* BlindWidgetBundle.swift in Sources */,
+				A20002 /* BlindWidget.swift in Sources */,
+				A20026 /* BlindEntry.swift in Sources */,
+				A20027 /* BlindTimelineProvider.swift in Sources */,
+				A20003 /* BlindWidgetEntryView.swift in Sources */,
+				A20004 /* OpenBlindIntent.swift in Sources */,
+				A20005 /* CloseBlindIntent.swift in Sources */,
+				A20006 /* StopBlindIntent.swift in Sources */,
+				A20019 /* SelectBlindIntent.swift in Sources */,
+				A20010 /* TaHomaModels.swift in Sources */,
+				A20011 /* TaHomaClient.swift in Sources */,
+				A20012 /* KeychainHelper.swift in Sources */,
+				A20013 /* SharedConfig.swift in Sources */,
+				A20018 /* BlindDevice.swift in Sources */,
+				A20020 /* BlindIconType.swift in Sources */,
+				A20021 /* AppTheme.swift in Sources */,
+				A20022 /* BlindIcons.swift in Sources */,
+				A20023 /* SceneDrawing.swift in Sources */,
+				A20024 /* FavoritePosition.swift in Sources */,
+				A20025 /* SetPositionIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D10001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = T20000 /* BlindWidgetExtension */;
+			targetProxy = C10001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		XC0001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		XC0002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		XC1001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TaHomaMacOSApp/TaHomaMacOSApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahoma-macos-app.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		XC1002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TaHomaMacOSApp/TaHomaMacOSApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahoma-macos-app.app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		XC2001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = BlindWidget/BlindWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlindWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlindWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahoma-macos-app.app.BlindWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		XC2002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = BlindWidget/BlindWidget.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlindWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BlindWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tahoma-macos-app.app.BlindWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		X00000 /* Build configuration list for PBXProject "TaHomaMacOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC0001 /* Debug */,
+				XC0002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X10000 /* Build configuration list for PBXNativeTarget "TaHomaMacOSApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC1001 /* Debug */,
+				XC1002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		X20000 /* Build configuration list for PBXNativeTarget "BlindWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				XC2001 /* Debug */,
+				XC2002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = R00000 /* Project object */;
+}
